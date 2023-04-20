@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Panier</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  </head>
+  <body>
+    <header>
+      <h1>Panier</h1>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Produit</th>
+            <th>Prix</th>
+            <th>Quantité</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Produit 1</td>
+            <td>10€</td>
+            <td>2</td>
+            <td>20€</td>
+          </tr>
+          <tr>
+            <td>Produit 2</td>
+            <td>15€</td>
+            <td>1</td>
+            <td>15€</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Total</td>
+            <td>35€</td>
+          </tr>
+        </tfoot>
+      </table>
+      <form>
+        <fieldset>
+          <legend>Informations de facturation</legend>
+          <label for="nom">Nom:</label>
+          <input type="text" id="nom" name="nom"><br><br>
+          <label for="adresse">Adresse:</label>
+          <input type="text" id="adresse" name="adresse"><br><br>
+          <label for="ville">Ville:</label>
+          <input type="text" id="ville" name="ville"><br><br>
+          <label for="codepostal">Code postal:</label>
+          <input type="text" id="codepostal" name="codepostal"><br><br>
+        </fieldset>
+        <fieldset>
+          <legend>Informations de paiement</legend>
+          <label for="carte">Numéro de carte:</label>
+          <input type="text" id="carte" name="carte"><br><br>
+          <label for="dateexpiration">Date d'expiration:</label>
+          <input type="text" id="dateexpiration" name="dateexpiration"><br><br>
+          <label for="codecvv">Code CVV:</label>
+          <input type="text" id="codecvv" name="codecvv"><br><br>
+        </fieldset>
+        <button type="submit" (click)="onClick()">Payer</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 MaryamShop</p>
+    </footer>
+  </body>
+</html>

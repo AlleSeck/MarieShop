@@ -1,0 +1,30 @@
+<section>
+    <article>
+        <img src="produit1.jpg" alt="Produit 1">
+        <h2>Produit 1</h2>
+        <h2>{{ titreArticle }}</h2>
+        <h2>{{ prixArticle }}</h2>
+        <p>Description du produit 1</p>
+        <button type="button" class="btn btn-primary" (click)="onLike()">jaime</button>
+        <p>Nbre de like : {{totalLikes}} </p>
+    </article>
+    
+    <article>
+        <img [src]="urlImage" [alt]="textAltImg">
+        <h2>{{ titreArticle }}</h2>
+        <h2>{{ prixArticle }}</h2>
+        <p>Description du produit 2</p>
+        <button type="button" class="btn btn-primary" (click)="onLike()">jaime</button>
+        <p>Nbre de like : {{totalLikes}} </p>
+    </article>
+    
+    
+    <article>
+        <img src="produit3.jpg" alt="Produit 3">
+        <h2>{{ titreArticle }}</h2>
+        <h2>{{ prixArticle }}</h2>
+        <h2>Produit 4</h2>
+        <button type="button" class="btn btn-primary" (click)="onLike()">jaime</button>
+        <p>Nbre de like : {{totalLikes}} </p>
+</article>
+</section> 
